@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice cream shop</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<nav class="p-1 bg-dark text-light text-center ">
+    <h1> Ice cream Shop</h1>
+</nav>
+<header class="bg-warning mb-3">
+    <marquee class="fw-bold py-1" scrollamount="15">
+        Best IceCream in the World
+    </marquee>
+</header>
+
+<section class="text-primary fw-bold">
+    <h3> IceCream</h3>
+</section>
+<main class="container-fluid">
+    <section class="row">
+
+        <div class="col-8">
+            <section class="row">
+
+
+                <div class="col-6">
+                    <div class="card shadow">
+                        <img src="https://www.cuisinart.com/contentassets/27d2142b0ae748acac2be09144a8e9b4/vanilla-soft-serve.jpg"
+                            alt="vanilla" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">vanilla</h3>
+                            <p class="card-text">$5.98</p>
+                            <button class=" btn btn-danger w-100" onclick="vanilla()">Add to Cart <i
+                                    class="mdi mdi-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="card shadow">
+                        <img src="https://www.cuisinart.com/contentassets/27d2142b0ae748acac2be09144a8e9b4/vanilla-soft-serve.jpg"
+                            alt="vanilla" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">vanilla</h3>
+                            <p class="card-text">$5.98</p>
+                            <button class=" btn btn-danger w-100" onclick="vanilla()">Add to Cart <i
+                                    class="mdi mdi-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="card shadow">
+                        <img src="https://www.cuisinart.com/contentassets/27d2142b0ae748acac2be09144a8e9b4/vanilla-soft-serve.jpg"
+                            alt="vanilla" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">vanilla</h3>
+                            <p class="card-text">$5.98</p>
+                            <button class=" btn btn-danger w-100" onclick="vanilla()">Add to Cart <i
+                                    class="mdi mdi-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card shadow">
+                        <img src="https://www.cuisinart.com/contentassets/27d2142b0ae748acac2be09144a8e9b4/vanilla-soft-serve.jpg"
+                            alt="vanilla" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">vanilla</h3>
+                            <p class="card-text">$5.98</p>
+                            <button class=" btn btn-danger w-100" onclick="vanilla()">Add to Cart <i
+                                    class="mdi mdi-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+
+        <div class="col-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h3>Cart</h3>
+                    <hr />
+
+                    <h5 class="text-end">Total:</h5>
+                    <hr />
+                    <section id="total" class="text-end fw-bold">
+
+                    </section>
+                    <button class="btn btn-primary w-100" onclick="checkout()"> Checkout <i
+                            class="mdi mdi-check"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-primary">
+        <h3>Toppings</h3>
+    </section>
+    <main class="container-fluid">
+        <section class="row">
+
+            <div class="col-8">
+                <section class="row">
+
+
+
+
+                    <div class="col-6">
+                        <div class="card shadow">
+                            <img src="https://www.cuisinart.com/contentassets/27d2142b0ae748acac2be09144a8e9b4/vanilla-soft-serve.jpg"
+                                alt="vanilla" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Cookie Chunks</h3>
+                                <p class="card-text">$5.98</p>
+                                <button class=" btn btn-danger w-100" onclick="buyCookieChunks()">Add to Cart <i
+                                        class="mdi mdi-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="card shadow">
+                            <img src="https://www.cuisinart.com/contentassets/27d2142b0ae748acac2be09144a8e9b4/vanilla-soft-serve.jpg"
+                                alt="vanilla" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Chocolate Chips</h3>
+                                <p class="card-text">$5.98</p>
+                                <button class=" btn btn-danger w-100" onclick="buyChocolateChips()">Add to Cart <i
+                                        class="mdi mdi-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card shadow">
+                            <img src="https://www.cuisinart.com/contentassets/27d2142b0ae748acac2be09144a8e9b4/vanilla-soft-serve.jpg"
+                                alt="vanilla" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Sprinkles</h3>
+                                <p class="card-text">$5.98</p>
+                                <button class=" btn btn-danger w-100" onclick="buySprinkles()">Add to Cart <i
+                                        class="mdi mdi-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+
+
+            <!-- <div class="col-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h3>Cart</h3>
+                        <hr />
+
+                        <h5 class="text-end">Total:</h5>
+                        <hr /> -->
+            <!-- <section id="total" class="text-end fw-bold">
+
+            </section> -->
+            <!-- <button class="btn btn-primary w-100" onclick="checkout()"> Checkout <i class="mdi mdi-check"></i></button> -->
+            </div>
+            </div>
+            </div>
+        </section>
+
+
+
+        <script src="app.js"></script>
+
+        <body>
+
+        </body>
+
+</html>
